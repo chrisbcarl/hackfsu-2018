@@ -1,0 +1,311 @@
+{
+  "name": "momentary-objective-manager",
+  "intents": [
+    {
+      "intent": "create",
+      "examples": [
+        {
+          "text": "Make a new project"
+        },
+        {
+          "text": "start a project"
+        },
+        {
+          "text": "can you book an appointment"
+        },
+        {
+          "text": "please add an event to my calendar"
+        },
+        {
+          "text": "add stuff to my calendar"
+        },
+        {
+          "text": "let's make something new"
+        },
+        {
+          "text": "new event"
+        },
+        {
+          "text": "new calendar event"
+        },
+        {
+          "text": "new project"
+        },
+        {
+          "text": "Hi, I'd like to create an event"
+        },
+        {
+          "text": "Hi, make a project for me"
+        },
+        {
+          "text": "Hi, make an event for me"
+        },
+        {
+          "text": "Can you create an alarm"
+        },
+        {
+          "text": "Make an alarm"
+        },
+        {
+          "text": "Start a new alarm"
+        },
+        {
+          "text": "new alarm"
+        }
+      ],
+      "description": "Create new entity."
+    },
+    {
+      "intent": "read",
+      "examples": [
+        {
+          "text": "show me my projects"
+        },
+        {
+          "text": "show a project"
+        },
+        {
+          "text": "can you show my appointments"
+        },
+        {
+          "text": "please show my calendar"
+        },
+        {
+          "text": "show my calendar"
+        },
+        {
+          "text": "let's see what's going on today"
+        },
+        {
+          "text": "show events today"
+        },
+        {
+          "text": "show calendar event"
+        },
+        {
+          "text": "show project"
+        },
+        {
+          "text": "Hi, I'd like to see my events"
+        },
+        {
+          "text": "Hi, I'd like to see my projects"
+        },
+        {
+          "text": "Hi, show my projects for me"
+        },
+        {
+          "text": "Hi, show my events for me"
+        },
+        {
+          "text": "Can you show my alarms"
+        },
+        {
+          "text": "Show my alarm"
+        },
+        {
+          "text": "show my alarms"
+        },
+        {
+          "text": "show alarm"
+        }
+      ],
+      "description": "Display what events and projects currently exist."
+    },
+    {
+      "intent": "update",
+      "examples": [
+        {
+          "text": "update my projects"
+        },
+        {
+          "text": "edit a project"
+        },
+        {
+          "text": "can you edit my appointments"
+        },
+        {
+          "text": "modify edit my calendar"
+        },
+        {
+          "text": "edit my calendar"
+        },
+        {
+          "text": "let's see what's got to change"
+        },
+        {
+          "text": "change events today"
+        },
+        {
+          "text": "update calendar event"
+        },
+        {
+          "text": "change project"
+        },
+        {
+          "text": "Hi, I'd like to edit my events"
+        },
+        {
+          "text": "Hi, I'd like to change my projects"
+        },
+        {
+          "text": "Hi, update my projects for me"
+        },
+        {
+          "text": "Hi, edit my events for me"
+        },
+        {
+          "text": "Can you edit my alarms"
+        },
+        {
+          "text": "update my alarm"
+        },
+        {
+          "text": "modify my alarms"
+        },
+        {
+          "text": "edit alarm"
+        }
+      ],
+      "description": "Change some of the entities that currently exist, possibly even deleting them."
+    },
+    {
+      "intent": "delete",
+      "examples": [
+        {
+          "text": "delete my projects"
+        },
+        {
+          "text": "remove a project"
+        },
+        {
+          "text": "can you cancel my appointments"
+        },
+        {
+          "text": "purge my calendar"
+        },
+        {
+          "text": "delete my calendar"
+        },
+        {
+          "text": "let's see what's got to go away"
+        },
+        {
+          "text": "delete events today"
+        },
+        {
+          "text": "remove calendar event"
+        },
+        {
+          "text": "change project"
+        },
+        {
+          "text": "Hi, I'd like to delete events on Friday"
+        },
+        {
+          "text": "Hi, I'd like to remove my projects"
+        },
+        {
+          "text": "Hi, get rid of my projects for me"
+        },
+        {
+          "text": "Hi, purge my events for me"
+        },
+        {
+          "text": "Can you delete my alarms"
+        },
+        {
+          "text": "remove my alarm"
+        },
+        {
+          "text": "get rid of my alarms"
+        },
+        {
+          "text": "purge alarm"
+        }
+      ],
+      "description": "Truly delete entities, like completely gone."
+    }
+  ],
+  "entities": [
+    
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2017-05-26"
+    }
+  },
+  "description": "MOM is a turnkey project management solution for individuals and PM's looking to optimize their time without manual labor.",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Mainflow",
+      "output": {
+        
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "node_1_1520047866368",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "text": {
+          "values": [
+            "I didn't understand. You can try rephrasing.",
+            "Can you reword your statement? I'm not understanding.",
+            "I didn't get your meaning."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "anything_else",
+      "description": null,
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1520047866368"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. How can I help you?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "welcome",
+      "description": null,
+      "dialog_node": "Welcome",
+      "previous_sibling": null
+    }
+  ],
+  "workspace_id": "e7aaf855-3bfc-4ee8-92d0-317af8fabab3",
+  "counterexamples": [
+    
+  ],
+  "learning_opt_out": false
+}
