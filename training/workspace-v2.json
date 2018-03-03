@@ -1,0 +1,915 @@
+{
+  "name": "momentary-objective-manager",
+  "intents": [
+    {
+      "intent": "update",
+      "examples": [
+        {
+          "text": "edit alarm"
+        },
+        {
+          "text": "modify my alarms"
+        },
+        {
+          "text": "update my alarm"
+        },
+        {
+          "text": "Can you edit my alarms"
+        },
+        {
+          "text": "Hi, edit my events for me"
+        },
+        {
+          "text": "Hi, update my projects for me"
+        },
+        {
+          "text": "Hi, I'd like to change my projects"
+        },
+        {
+          "text": "Hi, I'd like to edit my events"
+        },
+        {
+          "text": "change project"
+        },
+        {
+          "text": "update calendar event"
+        },
+        {
+          "text": "change events today"
+        },
+        {
+          "text": "let's see what's got to change"
+        },
+        {
+          "text": "edit my calendar"
+        },
+        {
+          "text": "modify edit my calendar"
+        },
+        {
+          "text": "can you edit my appointments"
+        },
+        {
+          "text": "edit a project"
+        },
+        {
+          "text": "update my projects"
+        }
+      ],
+      "description": "Change some of the entities that currently exist, possibly even deleting them."
+    },
+    {
+      "intent": "abort",
+      "examples": [
+        {
+          "text": "Never mind"
+        },
+        {
+          "text": "get me out of here"
+        },
+        {
+          "text": "cancel"
+        },
+        {
+          "text": "cancel everything"
+        },
+        {
+          "text": "abort"
+        },
+        {
+          "text": "take me away"
+        }
+      ],
+      "description": "In case we're in the middle of a flow and need to get out of it, at least then nwe can."
+    },
+    {
+      "intent": "create",
+      "examples": [
+        {
+          "text": "new alarm"
+        },
+        {
+          "text": "Start a new alarm"
+        },
+        {
+          "text": "Make an alarm"
+        },
+        {
+          "text": "Can you create an alarm"
+        },
+        {
+          "text": "Hi, make an event for me"
+        },
+        {
+          "text": "Hi, make a project for me"
+        },
+        {
+          "text": "Hi, I'd like to create an event"
+        },
+        {
+          "text": "new project"
+        },
+        {
+          "text": "new calendar event"
+        },
+        {
+          "text": "new event"
+        },
+        {
+          "text": "let's make something new"
+        },
+        {
+          "text": "add stuff to my calendar"
+        },
+        {
+          "text": "please add an event to my calendar"
+        },
+        {
+          "text": "can you book an appointment"
+        },
+        {
+          "text": "start a project"
+        },
+        {
+          "text": "Make a new project"
+        }
+      ],
+      "description": "Create new entity."
+    },
+    {
+      "intent": "read",
+      "examples": [
+        {
+          "text": "show alarm"
+        },
+        {
+          "text": "show my alarms"
+        },
+        {
+          "text": "Show my alarm"
+        },
+        {
+          "text": "Can you show my alarms"
+        },
+        {
+          "text": "Hi, show my events for me"
+        },
+        {
+          "text": "Hi, show my projects for me"
+        },
+        {
+          "text": "Hi, I'd like to see my projects"
+        },
+        {
+          "text": "Hi, I'd like to see my events"
+        },
+        {
+          "text": "show project"
+        },
+        {
+          "text": "show calendar event"
+        },
+        {
+          "text": "show events today"
+        },
+        {
+          "text": "let's see what's going on today"
+        },
+        {
+          "text": "show my calendar"
+        },
+        {
+          "text": "please show my calendar"
+        },
+        {
+          "text": "can you show my appointments"
+        },
+        {
+          "text": "show a project"
+        },
+        {
+          "text": "show me my projects"
+        }
+      ],
+      "description": "Display what events and projects currently exist."
+    },
+    {
+      "intent": "delete",
+      "examples": [
+        {
+          "text": "purge alarm"
+        },
+        {
+          "text": "get rid of my alarms"
+        },
+        {
+          "text": "remove my alarm"
+        },
+        {
+          "text": "Can you delete my alarms"
+        },
+        {
+          "text": "Hi, purge my events for me"
+        },
+        {
+          "text": "Hi, get rid of my projects for me"
+        },
+        {
+          "text": "Hi, I'd like to remove my projects"
+        },
+        {
+          "text": "Hi, I'd like to delete events on Friday"
+        },
+        {
+          "text": "change project"
+        },
+        {
+          "text": "remove calendar event"
+        },
+        {
+          "text": "delete events today"
+        },
+        {
+          "text": "let's see what's got to go away"
+        },
+        {
+          "text": "delete my calendar"
+        },
+        {
+          "text": "purge my calendar"
+        },
+        {
+          "text": "can you cancel my appointments"
+        },
+        {
+          "text": "remove a project"
+        },
+        {
+          "text": "delete my projects"
+        }
+      ],
+      "description": "Truly delete entities, like completely gone."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-time",
+      "values": [
+        
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "alarm",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "not-an-alarm",
+          "metadata": null,
+          "synonyms": []
+        }
+      ],
+      "metadata": null,
+      "description": null,
+      "fuzzy_match": true
+    },
+    {
+      "entity": "generic",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "alarm",
+          "metadata": null,
+          "synonyms": [
+            "alarm clock",
+            "buzzer",
+            "clock",
+            "alert"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "event",
+          "metadata": null,
+          "synonyms": [
+            "calendar",
+            "calendar event",
+            "appointment",
+            "meeting",
+            "engagement",
+            "interview",
+            "arrangement",
+            "consultation",
+            "session",
+            "date",
+            "rendezvous",
+            "commitment"
+          ]
+        },        
+        {
+          "type": "synonyms",
+          "value": "project",
+          "metadata": null,
+          "synonyms": [
+            "undertaking",
+            "task",
+            "enterprise",
+            "plan",
+            "venture",
+            "assignment"
+          ]
+        }
+      ],
+      "metadata": null,
+      "description": null,
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [
+        
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "sys-location",
+      "values": [
+        
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "sys-currency",
+      "values": [
+        
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "sys-number",
+      "values": [
+        
+      ],
+      "metadata": null,
+      "description": null
+    },
+    {
+      "entity": "sys-percentage",
+      "values": [
+        
+      ],
+      "metadata": null,
+      "description": null
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2017-05-26"
+    }
+  },
+  "description": "MOM is a turnkey project management solution for individuals and PM's looking to optimize their time without manual labor.",
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "DUDE WE STILL NEED A PROPER DATE",
+            "DATE PLZ"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_5_1520056350494",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "nomatch",
+      "description": null,
+      "dialog_node": "handler_19_1520057040235",
+      "previous_sibling": "handler_18_1520057040235"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Thanks for the date. Dumbass."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1520056350494",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "filled",
+      "description": null,
+      "dialog_node": "handler_18_1520057040235",
+      "previous_sibling": "handler_6_1520056350494"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "slot_5_1520056350494",
+      "context": {
+        "alarm_date": "@sys-date"
+      },
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_6_1520056350494",
+      "previous_sibling": "handler_7_1520056350494"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": "We need a date."
+      },
+      "parent": "slot_5_1520056350494",
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_7_1520056350494",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": "What would you like to create?"
+      },
+      "parent": "slot_11_1520056903025",
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_13_1520056903025",
+      "previous_sibling": "handler_12_1520056903025"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "slot_11_1520056903025",
+      "context": {
+        "event": "@event"
+      },
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "@event",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_12_1520056903025",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "slot_20_1520057183749",
+      "context": {
+        "alarm_time": "@sys-time"
+      },
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_21_1520057183749",
+      "previous_sibling": "handler_22_1520057183749"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "We need a time asshole.",
+            "How many times do I got to ask for a time?"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "slot_20_1520057183749",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "nomatch",
+      "description": null,
+      "dialog_node": "handler_24_1520057197956",
+      "previous_sibling": "handler_23_1520057197956"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Finally."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_20_1520057183749",
+      "context": null,
+      "metadata": null,
+      "next_step": null,
+      "conditions": null,
+      "event_name": "filled",
+      "description": null,
+      "dialog_node": "handler_23_1520057197956",
+      "previous_sibling": "handler_21_1520057183749"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": "We need a fucking time too."
+      },
+      "parent": "slot_20_1520057183749",
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_22_1520057183749",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": "What would you like to create?"
+      },
+      "parent": "slot_2_1520056150630",
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_4_1520056150630",
+      "previous_sibling": "handler_3_1520056150630"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "slot_2_1520056150630",
+      "context": {
+        "alarm": "@alarm"
+      },
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "@alarm",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_3_1520056150630",
+      "previous_sibling": null
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "node_1_1520047866368",
+      "context": null,
+      "metadata": {
+        
+      },
+      "variable": "$alarm_time",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_20_1520057183749",
+      "previous_sibling": "slot_5_1520056350494"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "node_1_1520047866368",
+      "context": null,
+      "metadata": {
+        
+      },
+      "variable": "$alarm",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_2_1520056150630",
+      "previous_sibling": "node_1_1520056150621"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "node_1_1520047866368",
+      "context": null,
+      "metadata": {
+        
+      },
+      "variable": "$alarm_date",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_5_1520056350494",
+      "previous_sibling": "slot_2_1520056150630"
+    },
+    {
+      "type": "response_condition",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Recieved $alarm and $alarm_date"
+          ]
+        }
+      },
+      "parent": "node_1_1520047866368",
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "$alarm && $alarm_date",
+      "description": null,
+      "dialog_node": "node_1_1520056150621",
+      "previous_sibling": null
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "node_10_1520056903014",
+      "context": null,
+      "metadata": {
+        
+      },
+      "variable": "$event",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_11_1520056903025",
+      "previous_sibling": "node_17_1520056903025"
+    },
+    {
+      "type": "slot",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "node_10_1520056903014",
+      "context": null,
+      "metadata": {
+        
+      },
+      "variable": "$event_date",
+      "next_step": null,
+      "conditions": null,
+      "description": null,
+      "dialog_node": "slot_14_1520056903025",
+      "previous_sibling": "slot_11_1520056903025"
+    },
+    {
+      "type": "response_condition",
+      "title": null,
+      "output": {
+        "text": {
+          "values": [
+            "Recieved $event and $event_date"
+          ]
+        }
+      },
+      "parent": "node_10_1520056903014",
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "$event && $event_date",
+      "description": null,
+      "dialog_node": "node_17_1520056903025",
+      "previous_sibling": null
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        "text": "Yo, we need a date."
+      },
+      "parent": "slot_14_1520056903025",
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": null,
+      "event_name": "focus",
+      "description": null,
+      "dialog_node": "handler_16_1520056903025",
+      "previous_sibling": "handler_15_1520056903025"
+    },
+    {
+      "type": "event_handler",
+      "title": null,
+      "output": {
+        
+      },
+      "parent": "slot_14_1520056903025",
+      "context": {
+        "event_date": "@date"
+      },
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "@date",
+      "event_name": "input",
+      "description": null,
+      "dialog_node": "handler_15_1520056903025",
+      "previous_sibling": null
+    },
+    {
+      "type": "frame",
+      "title": "Create Alarm",
+      "output": {
+        
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1520056563397"
+      },
+      "conditions": "#create && @alarm",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_1_1520047866368",
+      "digress_out": "allow_all",
+      "previous_sibling": "Welcome",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "frame",
+      "title": "Create Event",
+      "output": {
+        
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1520056563397"
+      },
+      "conditions": "#create && @event",
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_10_1520056903014",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1520047866368",
+      "digress_out_slots": "not_allowed"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "text": {
+          "values": [
+            "I didn't get your meaning.",
+            "What the fuck is this? Gimme something meaningful.",
+            "The fuck is that? Need real input."
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "anything_else",
+      "description": null,
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_10_1520056903014"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbye",
+      "output": {
+        "text": {
+          "values": [
+            "Thanks for using the bot!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": null,
+      "digress_in": "does_not_return",
+      "description": null,
+      "dialog_node": "node_9_1520056563397",
+      "previous_sibling": "Anything else"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. How can I help you?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "metadata": {
+        
+      },
+      "next_step": null,
+      "conditions": "welcome",
+      "description": null,
+      "dialog_node": "Welcome",
+      "previous_sibling": null
+    }
+  ],
+  "workspace_id": "a824fbb6-b68f-4161-9f5c-bb300ee4af20",
+  "counterexamples": [
+    
+  ],
+  "learning_opt_out": false
+}
