@@ -9,12 +9,20 @@
 </div>
 
 <div id="user-input">
-  <form class="mt-auto">
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Whats your question or command?" aria-label="Whats your question or command?" aria-describedby="">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button"><i class="fa fa-arrow-right"></i></button>
-      </div>
+  <div class="input-group mt-auto">
+    <input 
+      [(ngModel)]="query" 
+      type="text" 
+      class="form-control" 
+      placeholder="Whats your question or command?" 
+      aria-label="Whats your question or command?" aria-describedby="">
+    <div class="input-group-append">
+      <button
+        on-click="onClick($event)" 
+        class="btn btn-outline-secondary" 
+        type="button">
+        <i class="fa fa-arrow-right"></i>
+      </button>
     </div>
-  </form>
+  </div>
 </div>
