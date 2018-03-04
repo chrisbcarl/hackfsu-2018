@@ -6,7 +6,7 @@ var watson = {
         "workspace_id": "f32f2938-766b-4ae5-89d1-0d16be395bbc",
         "version_date": "2017-05-26"
     }
-}
+};
 
 var google = {
     "calendar": {
@@ -23,7 +23,7 @@ var google = {
             ]
         }
     }
-}
+};
 
 var trello = {
 

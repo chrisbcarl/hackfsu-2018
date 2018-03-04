@@ -37,7 +37,7 @@ exports.createConversation = function(req, res) {
                     message: err
                 });
             } else {
-                console.log('createConversation with', req.body.text, '\n',JSON.stringify(response, null, 2));
+                // console.log('createConversation with', req.body.text, '\n',JSON.stringify(response, null, 2));
                 res.send({
                     message: response.output.text,
                     // response: response,

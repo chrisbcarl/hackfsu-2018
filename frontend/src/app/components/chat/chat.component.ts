@@ -40,7 +40,7 @@ export class ChatComponent implements OnInit {
     this.doTheThing();
     this.query = '';
   }
-  
+
   populateWelcomeMessages() {
     this.conversation_service.createMessage(null, null)
       .subscribe((data) => {
@@ -88,6 +88,12 @@ export class ChatComponent implements OnInit {
       messages: [this.query],
       source: 0
     })
+
+    // SUPER HACKY
+    if (this.exchanges.length > 20) {
+      this.exchanges.shift();
+      this.exchanges.shift();
+    }
 
     this.conversation_service.createMessage(
       this.queries[this.queries.length - 1],

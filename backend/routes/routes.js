@@ -3,6 +3,9 @@ const router = express.Router();
 
 const resource_controller = require('../controllers/Resource');
 const watson_conversation_controller = require('../controllers/WatsonConversation');
+const google_calendar_controller = require('../controllers/GoogleCalendar');
+const options_controller = require('../controllers/Options');
+
 
 // test route (accessed at GET http://localhost:port_number/api)
 router.get('/', function(req, res) {
@@ -15,8 +18,16 @@ router.get('/ping', function(req, res) {
 });
 
 // real work
-router.route('/conversation').post(watson_conversation_controller.createConversation);
-router.route('/conversation').get(watson_conversation_controller.readConversation);
+router.route('/conversation')
+	.post(watson_conversation_controller.createConversation)
+	.get(watson_conversation_controller.readConversation);
+
+router.route('/calendar')
+	.post(google_calendar_controller.createEvent);
+
+router.route('/options')
+	.post(options_controller.createCredentials)
+	.get(options_controller.readCredentials);
 
 router.post('/resource', resource_controller.createResource);
 router.get('/resource', resource_controller.readResources);
