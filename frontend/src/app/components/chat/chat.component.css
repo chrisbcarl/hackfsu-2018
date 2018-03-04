@@ -3,7 +3,7 @@
   width: 80% !important;
   width: auto;
   position: absolute;
-  top: 60px;
+  top: 100px;
 }
 
 #user-input {
@@ -16,8 +16,8 @@
   background-color: #f5f5f5;
 }
 
-div {
+/* div {
   border-color: red;
   border-width: 3px;
   border-style: solid;
-}
+} */

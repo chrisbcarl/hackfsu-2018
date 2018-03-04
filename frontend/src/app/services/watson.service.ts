@@ -16,8 +16,8 @@ export class WatsonService {
     return this.http.get(
       'https://stream.watsonplatform.net/authorization/api/v1/token?url=https://stream.watsonplatform.net/conversation/api'
     );
-    curl -X GET --user {username}:{password} \
-""
+//     curl -X GET --user {username}:{password} \
+// ""
   }
 
   /*
