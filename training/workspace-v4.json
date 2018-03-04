@@ -1,0 +1,2996 @@
+{
+    "name": "momentary-objective-manager",
+    "intents": [
+      {
+        "intent": "update",
+        "examples": [
+          {
+            "text": "edit alarm"
+          },
+          {
+            "text": "modify my alarms"
+          },
+          {
+            "text": "update my alarm"
+          },
+          {
+            "text": "Can you edit my alarms"
+          },
+          {
+            "text": "Hi, edit my events for me"
+          },
+          {
+            "text": "Hi, update my projects for me"
+          },
+          {
+            "text": "Hi, I'd like to change my projects"
+          },
+          {
+            "text": "Hi, I'd like to edit my events"
+          },
+          {
+            "text": "change project"
+          },
+          {
+            "text": "update calendar event"
+          },
+          {
+            "text": "change events today"
+          },
+          {
+            "text": "let's see what's got to change"
+          },
+          {
+            "text": "edit my calendar"
+          },
+          {
+            "text": "modify edit my calendar"
+          },
+          {
+            "text": "can you edit my appointments"
+          },
+          {
+            "text": "edit a project"
+          },
+          {
+            "text": "update my projects"
+          }
+        ],
+        "description": "Change some of the entities that currently exist, possibly even deleting them."
+      },
+      {
+        "intent": "read",
+        "examples": [
+          {
+            "text": "show alarm"
+          },
+          {
+            "text": "show my alarms"
+          },
+          {
+            "text": "Show my alarm"
+          },
+          {
+            "text": "Can you show my alarms"
+          },
+          {
+            "text": "Hi, show my events for me"
+          },
+          {
+            "text": "Hi, show my projects for me"
+          },
+          {
+            "text": "Hi, I'd like to see my projects"
+          },
+          {
+            "text": "Hi, I'd like to see my events"
+          },
+          {
+            "text": "show project"
+          },
+          {
+            "text": "show calendar event"
+          },
+          {
+            "text": "show events today"
+          },
+          {
+            "text": "let's see what's going on today"
+          },
+          {
+            "text": "show my calendar"
+          },
+          {
+            "text": "please show my calendar"
+          },
+          {
+            "text": "can you show my appointments"
+          },
+          {
+            "text": "show a project"
+          },
+          {
+            "text": "show me my projects"
+          }
+        ],
+        "description": "Display what events and projects currently exist."
+      },
+      {
+        "intent": "create",
+        "examples": [
+          {
+            "text": "new alarm"
+          },
+          {
+            "text": "Start a new alarm"
+          },
+          {
+            "text": "Make an alarm"
+          },
+          {
+            "text": "Can you create an alarm"
+          },
+          {
+            "text": "Hi, make an event for me"
+          },
+          {
+            "text": "Hi, make a project for me"
+          },
+          {
+            "text": "Hi, I'd like to create an event"
+          },
+          {
+            "text": "new project"
+          },
+          {
+            "text": "new calendar event"
+          },
+          {
+            "text": "new event"
+          },
+          {
+            "text": "let's make something new"
+          },
+          {
+            "text": "add stuff to my calendar"
+          },
+          {
+            "text": "please add an event to my calendar"
+          },
+          {
+            "text": "can you book an appointment"
+          },
+          {
+            "text": "start a project"
+          },
+          {
+            "text": "Make a new project"
+          }
+        ],
+        "description": "Create new entity."
+      },
+      {
+        "intent": "_capabilities",
+        "examples": [
+          {
+            "text": "What can I do with you"
+          },
+          {
+            "text": "What can you do for me"
+          },
+          {
+            "text": "What can you do"
+          },
+          {
+            "text": "Is anyone there"
+          },
+          {
+            "text": "Hello?"
+          }
+        ],
+        "description": "A list of capabilities that the bot can return."
+      },
+      {
+        "intent": "delete",
+        "examples": [
+          {
+            "text": "purge alarm"
+          },
+          {
+            "text": "get rid of my alarms"
+          },
+          {
+            "text": "remove my alarm"
+          },
+          {
+            "text": "Can you delete my alarms"
+          },
+          {
+            "text": "Hi, purge my events for me"
+          },
+          {
+            "text": "Hi, get rid of my projects for me"
+          },
+          {
+            "text": "Hi, I'd like to remove my projects"
+          },
+          {
+            "text": "Hi, I'd like to delete events on Friday"
+          },
+          {
+            "text": "change project"
+          },
+          {
+            "text": "remove calendar event"
+          },
+          {
+            "text": "delete events today"
+          },
+          {
+            "text": "let's see what's got to go away"
+          },
+          {
+            "text": "delete my calendar"
+          },
+          {
+            "text": "purge my calendar"
+          },
+          {
+            "text": "can you cancel my appointments"
+          },
+          {
+            "text": "remove a project"
+          },
+          {
+            "text": "delete my projects"
+          }
+        ],
+        "description": "Truly delete entities, like completely gone."
+      },
+      {
+        "intent": "_snark",
+        "examples": [
+          {
+            "text": "gimme a witty joke"
+          },
+          {
+            "text": "roast me"
+          },
+          {
+            "text": "who the hell made you"
+          },
+          {
+            "text": "You seem dumb"
+          },
+          {
+            "text": "Are you smart?"
+          }
+        ],
+        "description": "Snarky replies and stuff to make this bot interesting."
+      },
+      {
+        "intent": "abort",
+        "examples": [
+          {
+            "text": "Never mind"
+          },
+          {
+            "text": "get me out of here"
+          },
+          {
+            "text": "cancel"
+          },
+          {
+            "text": "cancel everything"
+          },
+          {
+            "text": "abort"
+          },
+          {
+            "text": "take me away"
+          }
+        ],
+        "description": "In case we're in the middle of a flow and need to get out of it, at least then nwe can."
+      },
+      {
+        "intent": "_jokes",
+        "examples": [
+          {
+            "text": "what do you think of your mom"
+          },
+          {
+            "text": "What do you think of Siri?"
+          },
+          {
+            "text": "Are you funny?"
+          },
+          {
+            "text": "Tell me a joke"
+          }
+        ],
+        "description": "Funny jokes."
+      }
+    ],
+    "entities": [
+      {
+        "entity": "settings_project_calendar_sync",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "true",
+            "metadata": null,
+            "synonyms": [
+              "sync projects and calendar",
+              "true",
+              "yes",
+              "sync"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "false",
+            "metadata": null,
+            "synonyms": [
+              "don't sync",
+              "do not sync",
+              "false",
+              "no"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null,
+        "fuzzy_match": true
+      },
+      {
+        "entity": "settings_project_personel",
+        "values": [
+          {
+            "type": "patterns",
+            "value": "personel",
+            "metadata": null,
+            "patterns": [
+              "input.text.extract('(order )([a-zA-Z]+[0-9]+)', 2)"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "sys-time",
+        "values": [
+          
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "settings_common_description",
+        "values": [
+          {
+            "type": "patterns",
+            "value": "description",
+            "metadata": null,
+            "patterns": [
+              "[\\\"„“][A-Za-z0-9.:| @\\\\']+[\\\"”“]"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "settings_common_title",
+        "values": [
+          {
+            "type": "patterns",
+            "value": "title",
+            "metadata": null,
+            "patterns": [
+              "[\\\"„“][A-Za-z0-9.:| @\\\\']+[\\\"”“]"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null,
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-percentage",
+        "values": [
+          
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "settings_common_priority",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "crit",
+            "metadata": null,
+            "synonyms": [
+              "4",
+              "critical",
+              "extremely important",
+              "super important",
+              "the most important"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "hig",
+            "metadata": null,
+            "synonyms": [
+              "high priority",
+              "2",
+              "important",
+              "pretty important"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "low",
+            "metadata": null,
+            "synonyms": [
+              "low priority",
+              "not important",
+              "low",
+              "0"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "med",
+            "metadata": null,
+            "synonyms": [
+              "medium priority",
+              "normal priority",
+              "normal",
+              "medium",
+              "med",
+              "1"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null,
+        "fuzzy_match": true
+      },
+      {
+        "entity": "settings_alarm_snooze",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "dont-snooze",
+            "metadata": null,
+            "synonyms": [
+              "do not snooze"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "snooze",
+            "metadata": null,
+            "synonyms": [
+              "snooze time",
+              "break time",
+              "grace period"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "sys-date",
+        "values": [
+          
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "settings_alarm_type",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "cal-tasks",
+            "metadata": null,
+            "synonyms": [
+              "calendar and tasks",
+              "trello and google calendar",
+              "calendar and projects",
+              "cards and events",
+              "both"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "tasks",
+            "metadata": null,
+            "synonyms": [
+              "tasks",
+              "trello",
+              "project cards",
+              "cards",
+              "scrum",
+              "agile"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "calendar",
+            "metadata": null,
+            "synonyms": [
+              "events of the day",
+              "calendar",
+              "daily",
+              "events"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "simple",
+            "metadata": null,
+            "synonyms": [
+              "simple",
+              "just a sound",
+              "basic",
+              "tone",
+              "keep it simple"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null,
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-currency",
+        "values": [
+          
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "settings_project_method",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "agile",
+            "metadata": null,
+            "synonyms": [
+              "agile",
+              "scrum"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "waterfall",
+            "metadata": null,
+            "synonyms": [
+              "waterfall",
+              "ibm"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "prism",
+            "metadata": null,
+            "synonyms": [
+              "prism"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "prince2",
+            "metadata": null,
+            "synonyms": [
+              "prince 2"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "naive",
+            "metadata": null,
+            "synonyms": [
+              "usual",
+              "normal",
+              "naive"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null,
+        "fuzzy_match": true
+      },
+      {
+        "entity": "all",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "project",
+            "metadata": null,
+            "synonyms": [
+              "undertaking",
+              "task",
+              "enterprise",
+              "plan",
+              "venture",
+              "assignment",
+              "trello",
+              "trello project",
+              "agile"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "event",
+            "metadata": null,
+            "synonyms": [
+              "calendar",
+              "calendar event",
+              "appointment",
+              "meeting",
+              "engagement",
+              "interview",
+              "arrangement",
+              "consultation",
+              "session",
+              "date",
+              "rendezvous",
+              "commitment",
+              "google calendar event",
+              "google calendar",
+              "google cal",
+              "cal event",
+              "ical"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "alarm",
+            "metadata": null,
+            "synonyms": [
+              "alarm clock",
+              "buzzer",
+              "clock",
+              "alert"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null,
+        "fuzzy_match": true
+      },
+      {
+        "entity": "sys-number",
+        "values": [
+          
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "settings_alarm_event_repeat",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "mondays",
+            "metadata": null,
+            "synonyms": [
+              "every monday",
+              "mondays",
+              "weekly on monday"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "wednesdays",
+            "metadata": null,
+            "synonyms": [
+              "every wednesday",
+              "wednesdays",
+              "weekly on wedensdays"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "sundays",
+            "metadata": null,
+            "synonyms": [
+              "weekly on sundays",
+              "every sunday"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "tuesdays",
+            "metadata": null,
+            "synonyms": [
+              "every tuesday",
+              "tuesdays",
+              "weekly on tuesdays"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "thursdays",
+            "metadata": null,
+            "synonyms": [
+              "thursdays",
+              "weekly on thursdays",
+              "every thursday"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "fridays",
+            "metadata": null,
+            "synonyms": [
+              "every fridy",
+              "weekly on fridays",
+              "every friday"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "saturdays",
+            "metadata": null,
+            "synonyms": [
+              "every saturday",
+              "weekly on saturdays"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "weekdays",
+            "metadata": null,
+            "synonyms": [
+              "every weekday",
+              "monday thru friday"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "weekends",
+            "metadata": null,
+            "synonyms": [
+              "saturday and sunday",
+              "week end days",
+              "weekends"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "daily",
+            "metadata": null,
+            "synonyms": [
+              "every day",
+              "daily",
+              "weekdays and weekends",
+              "24/7",
+              "7 days a week"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null,
+        "fuzzy_match": false
+      },
+      {
+        "entity": "sys-location",
+        "values": [
+          
+        ],
+        "metadata": null,
+        "description": null
+      },
+      {
+        "entity": "settings_event_calendar_type",
+        "values": [
+          {
+            "type": "synonyms",
+            "value": "default",
+            "metadata": null,
+            "synonyms": [
+              "the usual",
+              "default",
+              "normal"
+            ]
+          },
+          {
+            "type": "synonyms",
+            "value": "other",
+            "metadata": null,
+            "synonyms": [
+              "different one",
+              "another one"
+            ]
+          }
+        ],
+        "metadata": null,
+        "description": null,
+        "fuzzy_match": true
+      }
+    ],
+    "language": "en",
+    "metadata": {
+      "api_version": {
+        "major_version": "v1",
+        "minor_version": "2017-05-26"
+      }
+    },
+    "description": "MOM is a turnkey project management solution for individuals and PM's looking to optimize their time without manual labor.",
+    "dialog_nodes": [
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Alarm, Would you like to repeat this daily, weekly, or just once?"
+        },
+        "parent": "slot_152_1520072645800",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_154_1520072645800",
+        "previous_sibling": "handler_153_1520072645800"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_152_1520072645800",
+        "context": {
+          "alarm_repeat": "@settings_alarm_event_repeat"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@settings_alarm_event_repeat",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_153_1520072645800",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_37_1520123522523",
+        "context": {
+          "event_end_date": "@sys-date"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-date",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_38_1520123522523",
+        "previous_sibling": "handler_39_1520123522523"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What end day?"
+        },
+        "parent": "slot_37_1520123522523",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_39_1520123522523",
+        "previous_sibling": null
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          "_customization": {
+            "mcr": null
+          }
+        },
+        "variable": "$event_start_date",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_3_1520123458970",
+        "previous_sibling": "node_28_1520123458971"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_end_time",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_40_1520123525446",
+        "previous_sibling": "slot_37_1520123522523"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_priority",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_46_1520123805251",
+        "previous_sibling": "slot_22_1520123458971"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_end_date",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_37_1520123522523",
+        "previous_sibling": "slot_8_1520123458970"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_duration",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_43_1520123528999",
+        "previous_sibling": "slot_40_1520123525446"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          "_customization": {
+            "mcr": null
+          }
+        },
+        "variable": "$event_start_time",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_8_1520123458970",
+        "previous_sibling": "slot_3_1520123458970"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_repeat",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_22_1520123458971",
+        "previous_sibling": "slot_43_1520123528999"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_location",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_16_1520123458970",
+        "previous_sibling": "slot_46_1520123805251"
+      },
+      {
+        "type": "response_condition",
+        "title": null,
+        "output": {
+          "text": {
+            "values": {
+              "0": "Awesome, we just made an event starting on $event_start_date at $event_start_time ending on $event_end_date at $event_end_time. It'll last for $event_duration hours and repeat $event_repeat at the following location: $event_location. It's of $event_priority importance so we'll remind you!"
+            }
+          }
+        },
+        "parent": "node_2_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "$event_start_date && $event_start_time && $event_end_date && $event_end_time && $event_duration && $event_location && $event_priority && $event_repeat",
+        "description": null,
+        "dialog_node": "node_28_1520123458971",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, How important is this? 0-3, or not important to critical?"
+        },
+        "parent": "slot_25_1520169382237",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_27_1520169382237",
+        "previous_sibling": "handler_26_1520169382237"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_25_1520169382237",
+        "context": {
+          "event_priority": "@settings_common_priority"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@settings_common_priority",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_26_1520169382237",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_22_1520123458971",
+        "context": {
+          "event_repeat": "@settings_alarm_event_repeat"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@settings_alarm_event_repeat",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_23_1520123458971",
+        "previous_sibling": "handler_24_1520123458971"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, How often should this repeat? You can say daily, weekly, occurrences, once?"
+        },
+        "parent": "slot_22_1520123458971",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_24_1520123458971",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What location?"
+        },
+        "parent": "slot_16_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_18_1520123458970",
+        "previous_sibling": "handler_17_1520123458970"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_16_1520123458970",
+        "context": {
+          "event_location": "@sys-location"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-location",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_17_1520123458970",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Alarm, How important is this? 0-3, or not important to critical?"
+        },
+        "parent": "slot_158_1520073484245",
+        "context": null,
+        "metadata": null,
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_160_1520073484245",
+        "previous_sibling": "handler_159_1520073484245"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": null,
+        "parent": "slot_158_1520073484245",
+        "context": {
+          "alarm_priority": "@settings_common_priority"
+        },
+        "metadata": null,
+        "next_step": null,
+        "conditions": "@settings_common_priority",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_159_1520073484245",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Alarm, What type of alarm? Would you like to hear a simple tone, your events, tasks, or both?"
+        },
+        "parent": "slot_155_1520073357311",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_157_1520073357311",
+        "previous_sibling": "handler_156_1520073357311"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": null,
+        "parent": "slot_155_1520073357311",
+        "context": {
+          "alarm_type": "@settings_alarm_type"
+        },
+        "metadata": null,
+        "next_step": null,
+        "conditions": "@settings_alarm_type",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_156_1520073357311",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_104_1520062012893",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "true",
+        "event_name": "nomatch",
+        "description": null,
+        "dialog_node": "handler_110_1520062022287",
+        "previous_sibling": "handler_109_1520062022287"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_104_1520062012893",
+        "context": {
+          "alarm_time": "@sys-time"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-time",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_105_1520062012893",
+        "previous_sibling": "handler_106_1520062012893"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_104_1520062012893",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "true",
+        "event_name": "filled",
+        "description": null,
+        "dialog_node": "handler_109_1520062022287",
+        "previous_sibling": "handler_105_1520062012893"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Alarm, What time?"
+        },
+        "parent": "slot_104_1520062012893",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_106_1520062012893",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_22_1520169382236",
+        "context": {
+          "event_repeat": "@settings_alarm_event_repeat"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@settings_alarm_event_repeat",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_24_1520169382237",
+        "previous_sibling": "handler_23_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, How often should this repeat? You can say daily, weekly, occurrences, once?"
+        },
+        "parent": "slot_22_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_23_1520169382236",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_8_1520123458970",
+        "context": {
+          "event_start_time": "@sys-time"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-time",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_10_1520123458970",
+        "previous_sibling": "handler_9_1520123458970"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_8_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "true",
+        "event_name": "nomatch",
+        "description": null,
+        "dialog_node": "handler_12_1520123458970",
+        "previous_sibling": "handler_11_1520123458970"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_8_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "true",
+        "event_name": "filled",
+        "description": null,
+        "dialog_node": "handler_11_1520123458970",
+        "previous_sibling": "handler_10_1520123458970"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What start time?"
+        },
+        "parent": "slot_8_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_9_1520123458970",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Alarm, How long do you want to snooze for?"
+        },
+        "parent": "slot_149_1520072611318",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_151_1520072611318",
+        "previous_sibling": "handler_150_1520072611318"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_149_1520072611318",
+        "context": {
+          "alarm_snooze": "@sys-number"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_150_1520072611318",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What location?"
+        },
+        "parent": "slot_28_1520169382237",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_30_1520169382237",
+        "previous_sibling": "handler_29_1520169382237"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_28_1520169382237",
+        "context": {
+          "event_location": "@sys-location"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-location",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_29_1520169382237",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_3_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "filled",
+        "description": null,
+        "dialog_node": "handler_7_1520169382236",
+        "previous_sibling": "handler_6_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_3_1520169382236",
+        "context": {
+          "event_start_date": "@sys-date"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-date",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_5_1520169382236",
+        "previous_sibling": "handler_4_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": "slot_3_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-date",
+        "event_name": "nomatch",
+        "description": null,
+        "dialog_node": "handler_6_1520169382236",
+        "previous_sibling": "handler_5_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What start day?"
+        },
+        "parent": "slot_3_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_4_1520169382236",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_85_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "filled",
+        "description": null,
+        "dialog_node": "handler_114_1520062737384",
+        "previous_sibling": "handler_103_1520061940787"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": "slot_85_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-date",
+        "event_name": "nomatch",
+        "description": null,
+        "dialog_node": "handler_103_1520061940787",
+        "previous_sibling": "handler_86_1520061911660"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_85_1520061911660",
+        "context": {
+          "alarm_date": "@sys-date"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-date",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_86_1520061911660",
+        "previous_sibling": "handler_87_1520061911660"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Alarm, What day?"
+        },
+        "parent": "slot_85_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_87_1520061911660",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_8_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "true",
+        "event_name": "filled",
+        "description": null,
+        "dialog_node": "handler_11_1520169382236",
+        "previous_sibling": "handler_10_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_8_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "true",
+        "event_name": "nomatch",
+        "description": null,
+        "dialog_node": "handler_12_1520169382236",
+        "previous_sibling": "handler_11_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_8_1520169382236",
+        "context": {
+          "event_start_time": "@sys-time"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-time",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_10_1520169382236",
+        "previous_sibling": "handler_9_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What start time?"
+        },
+        "parent": "slot_8_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_9_1520169382236",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What end time?"
+        },
+        "parent": "slot_40_1520123525446",
+        "context": null,
+        "metadata": null,
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_42_1520123525446",
+        "previous_sibling": "handler_41_1520123525446"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": null,
+        "parent": "slot_40_1520123525446",
+        "context": {
+          "event_end_time": "@sys-time"
+        },
+        "metadata": null,
+        "next_step": null,
+        "conditions": "@sys-time",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_41_1520123525446",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_30_1520123458971",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_32_1520123458971",
+        "previous_sibling": "handler_31_1520123458971"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_30_1520123458971",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_31_1520123458971",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": "slot_3_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "filled",
+        "description": null,
+        "dialog_node": "handler_6_1520123458970",
+        "previous_sibling": "handler_7_1520123458970"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_3_1520123458970",
+        "context": {
+          "event_start_date": "@sys-date"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-date",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_5_1520123458970",
+        "previous_sibling": "handler_4_1520123458970"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": "slot_3_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-date",
+        "event_name": "nomatch",
+        "description": null,
+        "dialog_node": "handler_7_1520123458970",
+        "previous_sibling": "handler_5_1520123458970"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What start day?"
+        },
+        "parent": "slot_3_1520123458970",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_4_1520123458970",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_33_1520169382237",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_35_1520169382237",
+        "previous_sibling": "handler_34_1520169382237"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_33_1520169382237",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_34_1520169382237",
+        "previous_sibling": null
+      },
+      {
+        "type": "response_condition",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": "node_1_1520169382223",
+        "context": null,
+        "disabled": true,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "node_36_1520169382237",
+        "previous_sibling": "node_32_1520169382237"
+      },
+      {
+        "type": "frame",
+        "title": "Create",
+        "output": {
+          
+        },
+        "parent": "node_1_1520169382223",
+        "context": null,
+        "metadata": {
+          "fallback": "leave",
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "next_step": null,
+        "conditions": "#create",
+        "description": null,
+        "dialog_node": "node_2_1520169382236",
+        "previous_sibling": "slot_33_1520169382237"
+      },
+      {
+        "type": "standard",
+        "title": "null",
+        "output": {
+          "text": {
+            "values": [
+              "We didn't pick up anything you wanted to do with projects. You could say for example, \"create a project\" or \"update a project I've got going on already\".",
+              "Can't do anything on just 'project'. Please add some sort of intent you'd like to do with a project. Basically any CRUD indication would be  helpful."
+            ],
+            "selection_policy": "random"
+          }
+        },
+        "parent": "node_1_1520169382223",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "anything_else",
+        "description": null,
+        "dialog_node": "node_32_1520169382237",
+        "previous_sibling": "node_2_1520169382236"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_1_1520169382223",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": null,
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_33_1520169382237",
+        "previous_sibling": null
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_location",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_28_1520169382237",
+        "previous_sibling": "slot_25_1520169382237"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          "_customization": {
+            "mcr": null
+          }
+        },
+        "variable": "$event_start_date",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_3_1520169382236",
+        "previous_sibling": "node_31_1520169382237"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_priority",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_25_1520169382237",
+        "previous_sibling": "slot_22_1520169382236"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          "_customization": {
+            "mcr": null
+          }
+        },
+        "variable": "$event_start_time",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_8_1520169382236",
+        "previous_sibling": "slot_3_1520169382236"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_end_date",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_13_1520169382236",
+        "previous_sibling": "slot_8_1520169382236"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_duration",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_19_1520169382236",
+        "previous_sibling": "slot_16_1520169382236"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_end_time",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_16_1520169382236",
+        "previous_sibling": "slot_13_1520169382236"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$event_repeat",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_22_1520169382236",
+        "previous_sibling": "slot_19_1520169382236"
+      },
+      {
+        "type": "response_condition",
+        "title": null,
+        "output": {
+          "text": {
+            "values": {
+              "0": "Event created called $event_title with the description of $event_description. It starts $event_start_date @ $event_start_time and ends on $event_end_date @ $event_end_time for $event_duration hours at $event_location. Saved under $event_calendar_type calendar as a $event_priority priority event that repeats $event_repeat."
+            }
+          }
+        },
+        "parent": "node_2_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "$event_description && $event_title && $event_start_date && $event_start_time && $event_end_date && $event_end_time && $event_duration && $event_location && $event_calendar_type && $event_priority && $event_repeat",
+        "description": null,
+        "dialog_node": "node_31_1520169382237",
+        "previous_sibling": null
+      },
+      {
+        "type": "standard",
+        "title": "null",
+        "output": {
+          "text": {
+            "values": [
+              "We didn't pick up anything you wanted to do with projects. You could say for example, \"create a project\" or \"update a project I've got going on already\".",
+              "Can't do anything on just 'project'. Please add some sort of intent you'd like to do with a project. Basically any CRUD indication would be  helpful."
+            ],
+            "selection_policy": "random"
+          }
+        },
+        "parent": "node_83_1520061911403",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "anything_else",
+        "description": null,
+        "dialog_node": "node_97_1520061911660",
+        "previous_sibling": "node_84_1520061911660"
+      },
+      {
+        "type": "frame",
+        "title": "Create",
+        "output": {
+          
+        },
+        "parent": "node_83_1520061911403",
+        "context": null,
+        "metadata": {
+          "fallback": "leave",
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "next_step": null,
+        "conditions": "#create",
+        "description": null,
+        "dialog_node": "node_84_1520061911660",
+        "previous_sibling": "slot_98_1520061911660"
+      },
+      {
+        "type": "response_condition",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": "node_83_1520061911403",
+        "context": null,
+        "disabled": true,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "node_101_1520061911660",
+        "previous_sibling": "node_97_1520061911660"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_83_1520061911403",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": null,
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_98_1520061911660",
+        "previous_sibling": null
+      },
+      {
+        "type": "standard",
+        "title": "null",
+        "output": {
+          "text": {
+            "values": [
+              "We didn't pick up anything you wanted to do with projects. You could say for example, \"create a project\" or \"update a project I've got going on already\".",
+              "Can't do anything on just 'project'. Please add some sort of intent you'd like to do with a project. Basically any CRUD indication would be  helpful."
+            ],
+            "selection_policy": "random"
+          }
+        },
+        "parent": "node_1_1520123458957",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "anything_else",
+        "description": null,
+        "dialog_node": "node_29_1520123458971",
+        "previous_sibling": "node_2_1520123458970"
+      },
+      {
+        "type": "response_condition",
+        "title": null,
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": "node_1_1520123458957",
+        "context": null,
+        "disabled": true,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "node_33_1520123458971",
+        "previous_sibling": "node_29_1520123458971"
+      },
+      {
+        "type": "frame",
+        "title": "Create",
+        "output": {
+          
+        },
+        "parent": "node_1_1520123458957",
+        "context": null,
+        "metadata": {
+          "fallback": "leave",
+          "_customization": {
+            "mcr": true
+          }
+        },
+        "next_step": null,
+        "conditions": "#create",
+        "description": null,
+        "dialog_node": "node_2_1520123458970",
+        "previous_sibling": "slot_30_1520123458971"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_1_1520123458957",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": null,
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_30_1520123458971",
+        "previous_sibling": null
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": null,
+        "parent": "node_9_1520056563397",
+        "context": null,
+        "metadata": null,
+        "variable": null,
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_120_1520062972889",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, How many hours?"
+        },
+        "parent": "slot_43_1520123528999",
+        "context": null,
+        "metadata": null,
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_45_1520123528999",
+        "previous_sibling": "handler_44_1520123528999"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": null,
+        "parent": "slot_43_1520123528999",
+        "context": {
+          "event_duration": "@sys-number"
+        },
+        "metadata": null,
+        "next_step": null,
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_44_1520123528999",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_120_1520062972889",
+        "context": null,
+        "metadata": null,
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_122_1520062972889",
+        "previous_sibling": "handler_121_1520062972889"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": null,
+        "parent": "slot_120_1520062972889",
+        "context": null,
+        "metadata": null,
+        "next_step": null,
+        "conditions": null,
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_121_1520062972889",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What end time?"
+        },
+        "parent": "slot_16_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_18_1520169382236",
+        "previous_sibling": "handler_17_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_16_1520169382236",
+        "context": {
+          "event_end_time": "@sys-time"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-time",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_17_1520169382236",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_13_1520169382236",
+        "context": {
+          "event_end_date": "@sys-date"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-date",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_15_1520169382236",
+        "previous_sibling": "handler_14_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, What end day?"
+        },
+        "parent": "slot_13_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_14_1520169382236",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, How important is this? 0-3, or not important to critical?"
+        },
+        "parent": "slot_46_1520123805251",
+        "context": null,
+        "metadata": null,
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_48_1520123805251",
+        "previous_sibling": "handler_47_1520123805251"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": null,
+        "parent": "slot_46_1520123805251",
+        "context": {
+          "event_priority": "@settings_common_priority"
+        },
+        "metadata": null,
+        "next_step": null,
+        "conditions": "@settings_common_priority",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_47_1520123805251",
+        "previous_sibling": null
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_84_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$alarm_type",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_155_1520073357311",
+        "previous_sibling": "slot_152_1520072645800"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_84_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$alarm_priority",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_158_1520073484245",
+        "previous_sibling": "slot_155_1520073357311"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_84_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$alarm_snooze",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_149_1520072611318",
+        "previous_sibling": "slot_104_1520062012893"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_84_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "variable": "$alarm_repeat",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_152_1520072645800",
+        "previous_sibling": "slot_149_1520072611318"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_84_1520061911660",
+        "context": null,
+        "metadata": {
+          "_customization": {
+            "mcr": null
+          }
+        },
+        "variable": "$alarm_time",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_104_1520062012893",
+        "previous_sibling": "slot_85_1520061911660"
+      },
+      {
+        "type": "slot",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "node_84_1520061911660",
+        "context": null,
+        "metadata": {
+          "_customization": {
+            "mcr": null
+          }
+        },
+        "variable": "$alarm_date",
+        "next_step": null,
+        "conditions": null,
+        "description": null,
+        "dialog_node": "slot_85_1520061911660",
+        "previous_sibling": "node_161_1520073512499"
+      },
+      {
+        "type": "response_condition",
+        "title": null,
+        "output": {
+          "text": {
+            "values": {
+              "0": "Alarm created for $alarm_date at $alarm_time called 'INSERT RANDOM'. We'll let you snooze for $alarm_snooze minutes and it will repeat $alarm_repeat. It's gonna be a $alarm_type kind of alarm and it's $alarm_priority."
+            }
+          }
+        },
+        "parent": "node_84_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "$alarm_date && $alarm_time && $alarm_snooze && $alarm_repeat && $alarm_type && $alarm_priority",
+        "description": null,
+        "dialog_node": "node_161_1520073512499",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_98_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_100_1520061911660",
+        "previous_sibling": "handler_99_1520061911660"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_98_1520061911660",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_99_1520061911660",
+        "previous_sibling": null
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          "text": "Event, How many hours?"
+        },
+        "parent": "slot_19_1520169382236",
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": null,
+        "event_name": "focus",
+        "description": null,
+        "dialog_node": "handler_21_1520169382236",
+        "previous_sibling": "handler_20_1520169382236"
+      },
+      {
+        "type": "event_handler",
+        "title": null,
+        "output": {
+          
+        },
+        "parent": "slot_19_1520169382236",
+        "context": {
+          "event_duration": "@sys-number"
+        },
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "@sys-number",
+        "event_name": "input",
+        "description": null,
+        "dialog_node": "handler_20_1520169382236",
+        "previous_sibling": null
+      },
+      {
+        "type": "standard",
+        "title": "Alarm",
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": null,
+        "context": null,
+        "metadata": {
+          "fallback": "leave",
+          "_customization": {
+            "mcr": false
+          }
+        },
+        "next_step": {
+          "behavior": "skip_user_input"
+        },
+        "conditions": "@all:alarm",
+        "digress_in": "does_not_return",
+        "description": null,
+        "dialog_node": "node_83_1520061911403",
+        "digress_out": "allow_all",
+        "previous_sibling": "node_68_1520060683622"
+      },
+      {
+        "type": "standard",
+        "title": "abort",
+        "output": {
+          "text": {
+            "values": [
+              "Aborting!"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": null,
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": {
+          "behavior": "jump_to",
+          "selector": "body",
+          "dialog_node": "node_9_1520056563397"
+        },
+        "conditions": "#abort",
+        "digress_in": "does_not_return",
+        "description": null,
+        "dialog_node": "node_112_1520062397021",
+        "previous_sibling": "Welcome"
+      },
+      {
+        "type": "standard",
+        "title": "Anything else",
+        "output": {
+          "text": {
+            "values": [
+              "I didn't get your meaning.",
+              "Gimme something meaningful.",
+              "Need real input."
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": null,
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "anything_else",
+        "description": null,
+        "dialog_node": "Anything else",
+        "previous_sibling": "node_1_1520169382223"
+      },
+      {
+        "type": "standard",
+        "title": "Event",
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": null,
+        "context": null,
+        "metadata": {
+          "fallback": "leave",
+          "_customization": {
+            "mcr": false
+          }
+        },
+        "next_step": {
+          "behavior": "skip_user_input"
+        },
+        "conditions": "@all:event",
+        "digress_in": "does_not_return",
+        "description": null,
+        "dialog_node": "node_1_1520123458957",
+        "digress_out": "allow_all",
+        "previous_sibling": "node_83_1520061911403"
+      },
+      {
+        "type": "standard",
+        "title": "Project",
+        "output": {
+          "text": {
+            "values": [
+              
+            ]
+          }
+        },
+        "parent": null,
+        "context": null,
+        "metadata": {
+          "fallback": "leave",
+          "_customization": {
+            "mcr": false
+          }
+        },
+        "next_step": {
+          "behavior": "skip_user_input"
+        },
+        "conditions": "@all:project",
+        "digress_in": "does_not_return",
+        "description": null,
+        "dialog_node": "node_1_1520169382223",
+        "digress_out": "allow_all",
+        "previous_sibling": "node_1_1520123458957"
+      },
+      {
+        "type": "standard",
+        "title": "Capabilities",
+        "output": {
+          "text": {
+            "values": [
+              "MOM is a turnkey project management solution for individuals and PM's looking to optimize their time without manual labor.",
+              "You can ask me things like \"make me a project\", or \"can you set an alarm for me?\", and even \"please cancel all of my appointments on Friday?\""
+            ],
+            "selection_policy": "random"
+          }
+        },
+        "parent": null,
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "#_capabilities",
+        "description": null,
+        "dialog_node": "node_68_1520060683622",
+        "previous_sibling": "node_112_1520062397021"
+      },
+      {
+        "type": "frame",
+        "title": "Goodbye",
+        "output": {
+          "text": {
+            "values": [
+              "Thanks for using the bot!"
+            ],
+            "selection_policy": "sequential"
+          }
+        },
+        "parent": null,
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "#abort",
+        "digress_in": "does_not_return",
+        "description": null,
+        "dialog_node": "node_9_1520056563397",
+        "digress_out": "allow_all",
+        "previous_sibling": "Anything else",
+        "digress_out_slots": "not_allowed"
+      },
+      {
+        "type": "standard",
+        "title": "Welcome",
+        "output": {
+          "text": {
+            "values": [
+              "Hello. How can I help you?",
+              "Yo, use me to help organize your life!",
+              "You can use me to do all kinds of amazing things. Just ask or start commanding away!"
+            ],
+            "selection_policy": "random"
+          }
+        },
+        "parent": null,
+        "context": null,
+        "metadata": {
+          
+        },
+        "next_step": null,
+        "conditions": "welcome",
+        "description": null,
+        "dialog_node": "Welcome",
+        "previous_sibling": null
+      }
+    ],
+    "workspace_id": "f32f2938-766b-4ae5-89d1-0d16be395bbc",
+    "counterexamples": [
+      
+    ],
+    "learning_opt_out": false
+  }
