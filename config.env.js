@@ -4,7 +4,7 @@ var watson = {
         "username": "<INSERT YOUR CREDS HERE>",
         "password": "<INSERT YOUR CREDS HERE>",
         "workspace_id": "<INSERT YOUR CREDS HERE>",
-        "version_date": "<INSERT YOUR CREDS HERE>"
+        "version_date": "2017-05-26"
     }
 };
 
